@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анимация регистрационной страницы.</title>
+    <link rel="stylesheet" type="text/css" href="Index.css"> <!--Ссылка на CSS файл-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="Login">
+        <h2 id="txt">Login</h2>
+        <div class="inputBox"> <!--Тут про имя-->
+            <input type="text" placeholder="Username">
+        </div>
+        <div class="inputBox"> <!--Тут про пароль-->
+            <input type="password" placeholder="Login">
+        </div> 
+        <div class="inputBox"> <!--Кнопка для действий-->
+            <input type="submit" value="Login" id="btn">
+        </div>
+        <div class="group"> <!--Если забыл пароль или нужно войти-->
+            <a href="#">Forget password</a>
+            <a href="#">Sign up</a>
+        </div> <!---->
+    </div>
+    <div class="colors"> <!--Тут я задал цвета для страницы, нахимая на которых можно менять цвет фона сайта-->
+        <span class="active" onclick="changeColor('#1dd1a1')" style="--clr: #1dd1a1;"></span><!--Active - что тут стоит, это маленькое-черное окруженность.-->
+        <span  onclick="changeColor('#13e90c')" style="--clr: #13e90c;"></span>
+        <span  onclick="changeColor('#e90ca7')" style="--clr: #e90ca7;"></span>
+        <span  onclick="changeColor('#dae90c')" style="--clr: #dae90c;"></span>
+        <span  onclick="changeColor('#5c1dd1')" style="--clr: #5c1dd1;"></span>
+    </div> <!---->
+    <script src="script.js"></script>
+</body>
+</html>

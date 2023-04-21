@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; /*Шрифт что загрузил из Google fonts*/
+}
+body{ /*Обращяюсь к самому сайту в целом*/
+    display: flex; /*Наверное центрирует*/
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1dd1a1;
+    transition: 0.5s;
+}
+.Login{ /*Обращаюсь к логину, т.е. белый квадрат*/
+    position: relative;
+    padding: 50px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0,1);
+    border-radius: 25px;
+}
+.Login h2{ /*Обращаюсь к загаловку*/
+    font-weight: 500;
+    border-left: 15px solid #1dd1a1; 
+    line-height: 1em;
+    padding-left: 10px; /*Это отступ в лево*/
+    transition: 0.5s;
+    color: #333;
+}
+.Login .inputBox{
+    position: relative;
+}
+.Login .inputBox input{
+    position: relative;
+    width: 100%; /*Это ширина*/
+    padding: 10px 15px; /* это отступ */
+    outline: none;
+    border: 2px solid #555;
+    font-size: 1em;
+    color: #333;
+    border-radius: 15px; /*"то закругление*/
+}
+.Login .inputBox input#btn{
+    border: none;
+    background: #1dd1a1; /*Задний фон, цвет фона*/
+    color: #fff;
+    transition: 0.5s;
+    font-size: 1.1em; /*Высота шрифта*/
+    font-weight: 500; /*Ширина шрифта*/
+    cursor: pointer; /*А это наверное когда курсор направляешь на объект, то оно как-то с ним взаимодействует*/
+}
+.Login .group{
+    display: flex;
+    justify-content: space-between; /* делает пространство между объектами*/
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+a:nth-child(2){
+    font-weight: 500;
+    text-decoration: underline;
+}
+.colors{
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px 0 0 25px; /*25px по краям и 0 по середине, позволяет закруглять углы по отдельности*/
+}
+.colors span{
+    position: relative;
+    width: 20PX;
+    height: 20px;
+    background: var(--clr);
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.active{
+    border: 2px solid #333; /*Это обводка, т.е. окружает элементs*/
+    scale: 1.5;
+}
